@@ -1,0 +1,29 @@
+plugins {
+    id 'application'
+}
+
+group = 'ua.dev.gal'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.17
+targetCompatibility = 1.17
+
+application {
+    mainClass.set("ua.dev.gal.calctrainer.Main")
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter:${springBootVer}"
+    implementation "org.springframework.shell:spring-shell-starter:${springBootVer}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVer}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVer}"
+}
+
+test {
+    useJUnitPlatform()
+}
