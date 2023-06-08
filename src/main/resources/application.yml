@@ -1,0 +1,11 @@
+spring:
+  main:
+    banner-mode: off
+  shell:
+    history:
+      enabled: false
+
+## disable console logging
+logging:
+  pattern:
+    console:

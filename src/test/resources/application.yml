@@ -1,0 +1,4 @@
+## disable console logging
+logging:
+  pattern:
+    console:
